@@ -39,18 +39,17 @@ nav {
 }
 
 header {
-    background-image: url('#');
+    /* background-image: url('#');
     background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 10%;
-    line-height: 50vw;
-    opacity: 0.8
+    background-size: cover; */
+    margin-top: 10vw;
+    height: 100vw;
+    /* opacity: 0.8 */
 }
 
 h1 {
     font-size: 10vw;
     line-height: auto;
-    color: white;
     text-align: center;
 }
 
@@ -92,12 +91,17 @@ h2 {
     text-align: justify;
 }
 
+#portfolios h2 {
+    margin: top 15vw;
+}
+
 #tiles {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
+    margin: 15vw 5vw;
 }
 
 #tiles article {
@@ -113,23 +117,28 @@ h2 {
 
 .case-study {
     background-color: gray;
-    width: 40%;
-    height: 400px;
+    width: 50vw;
+    height: 70vw;
     border-radius: 10px;
 }
 
-.case-study h3 {
-    display: none;
-}
-
 #one {
-    background: url('#');
+    /* background: url('#');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-color: lightblue;
 }
 
 #two {
+    background-color: lightpink;
+}
 
+#three {
+    background-color: lightgoldenrodyellow;
+}
+
+#four {
+    background-color: lightsteelblue;
 }
 
 footer {
@@ -143,8 +152,8 @@ footer {
 
 footer ul {
     list-style: none;
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: center; */
 }
 
 footer li {
