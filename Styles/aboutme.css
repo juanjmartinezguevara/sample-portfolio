@@ -16,26 +16,59 @@ nav {
     z-index: 1;
 }
 
-#logoImg {
-    width: 15vw;
-    padding: 0 5vw;
-}
-
-#navbar {
+#nav-links {
+    list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1vw;
+    margin: 0;
+}
+
+#nav-links li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logoImg {
+    width: 12vw;
+    height: 12vw;
+}
+
+#nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3.75vw;
+    padding: 0 0 0 2vw;
+}
+
+#nav-links a:hover {
+    color: #2A4C64;
+}
+
+#social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -9vw;
     margin-right: 1vw;
 }
 
-#navbar .fa {
+#social-links .fa {
     text-decoration: none;
     background-color: #2A4C64;
+    box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.25);
     color: white;
-    font-size: 5vw;
+    font-size: 4vw;
     border-radius: 50%;
-    padding: 3vw;
+    padding: 2.5vw;
     margin: 0 1vw;
+    transition: color 2s;
+}
+
+#social-links .fa:hover {
+    background: linear-gradient(220deg, #EFAAAC 5%, #2A4C64  85%);
 }
 
 header {
@@ -108,11 +141,16 @@ header {
 
 @media (min-width: 769px) {
     #logoImg {
-        width: 4vw;
-        padding: 0 3vw;
+        width: 5vw;
+        height: 5vw;
     }
 
-    #navbar .fa {
+    #nav-links a {
+        font-size: 2vw;
+    }
+
+    #social-links .fa {
+        box-shadow: 0.25vw 0.25vw 0.25vw rgba(0, 0, 0, 0.25);
         font-size: 2vw;
         padding: 1vw;
     }
