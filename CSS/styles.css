@@ -44,6 +44,10 @@ nav {
     padding: 0 0 0 2vw;
 }
 
+#nav-links a:hover {
+    color: #2A4C64;
+}
+
 #social-links {
     display: flex;
     justify-content: space-between;
@@ -61,6 +65,11 @@ nav {
     border-radius: 50%;
     padding: 2.5vw;
     margin: 0 1vw;
+    transition: color 2s;
+}
+
+#social-links .fa:hover {
+    background: linear-gradient(220deg, #EFAAAC 5%, #2A4C64  85%);
 }
 
 header {
@@ -116,6 +125,10 @@ header {
     margin: 0 3vw;
     white-space: nowrap;
     text-align: center;
+}
+
+.button:hover {
+    background: linear-gradient(212.11deg, #EFAAAC 25.56%, #2A4C64 155.81%);
 }
 
 #about-me {
@@ -295,11 +308,13 @@ header {
 
     #two {
         border-left: 0.1vw solid white;
+        margin-bottom: -0.2vw;
     }
     
     #three {
         border-top: 0.1vw solid white;
         border-right: 0.1vw solid white;
+        margin-top: -0.5vw;
     }
 
     #four {
