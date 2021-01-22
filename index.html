@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./Images/logo.png" type="image/icon">
 </head>
 
 <body>
-    <nav>
-        <img id="logoImg" src="#" alt="logo">
+    <!-- <nav>
+        <img id="logoImg" src="/Images/logo.png" alt="logo">
         <ul id="navbar">
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </ul>
+    </nav> -->
+    <nav>
+        <ul id="nav-links">
+            <li><img id="logoImg" src="/Images/logo.png" alt="logo"></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">My Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul id="social-links">
             <a href="#" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-instagram"></a>
             <a href="#" class="fa fa-twitter"></a>
@@ -19,17 +33,15 @@
     </nav>
 
     <header>
-        <div>
-            <h1>Adam the Actualizer</h1>
+        <div id='headerDiv'>
+            <span><h1>Hi I’m Adam, 👋🏼<br>
+                a designer & a dreamer<br>
+                who loves new challenges</h1></span>
             <div id="navs-cta">
                 <ul>
-                    <li class="link-media"><a href="#" >Case Studies</a></li>
-                    <li class="link-media"><a href="#">About Me</a></li>
-                    <li class="link-media"><a href="#">Contact</a></li>
-                </ul>
-                <br>
-                <ul>
-                    <li><a href="#about-me">↓</a></li>
+                    <li><a class="button" href="./Case Studies/case-studies.html" >My Work</a></li>
+                    <li><a class="button" href="./About Me/about-me.html">About Me</a></li>
+                    <li><a class="button" href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -37,9 +49,9 @@
 
     <section name="about-me" id="about-me">
         <div>
-            <img id="adamImg" src="https://media.istockphoto.com/photos/portrait-of-smiling-handsome-man-in-blue-tshirt-standing-with-crossed-picture-id1045886560?k=6&m=1045886560&s=612x612&w=0&h=hXrxai1QKrfdqWdORI4TZ-M0ceCVakt4o6532vHaS3I=">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <img id="adamImg" src="https://i0.wp.com/www.sandiegoperioimplants.com/wp-content/uploads/2017/12/joseph-gonzalez-399972-e1513150589529.jpg?fit=1903%2C2005&ssl=1">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -52,27 +64,31 @@
     </section>
 
     <section name="portfolios" id="portfolios">
-        <h2>Portfolios</h2>
         <div id="tiles">
             <article class="case-study" id="one">
-                <h3>Project Title</h3>
+                <img class='projectImg' src='./Images/tile-a.png'>
+                <h3>Overhauling the online ordering experience</h3>
+                <a class="button btn2" href="#">View project</a>
             </article>
+
             <article class="case-study" id="two">
-                <h3>Project Title</h3>
+                <img class='projectImg' src='./Images/tile-b.png'>
+                <h3>Mood Tracking + Journaling App</h3>
+                <a class="button btn2" href="#">View project</a>
             </article>
+
             <article class="case-study" id="three">
-                <h3>Project Title</h3>
+                <img class='projectImg' src='./Images/tile-c.png'>
+                <h3>Skincare Product Tracker + Reviews</h3>
+                <a class="button btn2" href="#">View project</a>
             </article>
+
             <article class="case-study" id="four">
-                <h3>Project Title</h3>
+                <img class='projectImg' src='./Images/tile-d.png'>
+                <h3>Sleep Tracking + Dream Catcher App</h3>
+                <a class="button btn2" href="#">View project</a>
             </article>
         </div>
     </section>
-
-    <footer>
-        <ul>
-            <li>© Adam the Actualizer 2021</li>
-        </ul>
-    </footer>
 </body>
 </html>

@@ -1,1 +1,189 @@
+html, body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+}
 
+nav {
+    background-color: #A6AFAD;
+    border-bottom: #2A4C64 solid 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#logoImg {
+    width: 15vw;
+    padding: 0 5vw;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1vw;
+}
+
+#navbar .fa {
+    text-decoration: none;
+    background-color: #2A4C64;
+    color: white;
+    font-size: 5vw;
+    border-radius: 50%;
+    padding: 3vw;
+    margin: 0 1vw;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A4C64;
+    margin-top: 20vw;
+}
+
+
+#adamImg {
+    display: block;
+    border-radius: 50%;
+    max-width: 65vw;
+    max-height: 65vw;
+    margin: 10vw;
+}
+
+#sec1 {
+    background: #A6AFAD;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+    padding: 10vw 0;
+    text-align: center;
+}
+
+#specTalents {
+    background-color: #2A4C64;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw 0;
+}
+
+#specTalents div {
+    width: 80vw;
+}
+
+#specTalents h2 {
+    text-align: center;
+}
+
+#specTalents p {
+    padding: 5vw;
+    text-align: center;
+}
+
+#tiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#tiles article {
+    width: 75vw;
+    border-bottom: 1vw solid white;
+}
+
+@media (min-width: 769px) {
+    #logoImg {
+        width: 4vw;
+        padding: 0 3vw;
+    }
+
+    #navbar .fa {
+        font-size: 2vw;
+        padding: 1vw;
+    }
+
+    header {
+        margin-top: 6vw;
+    }
+
+    #adamImg {
+        width: 30vw;
+    }
+
+    #text {
+        padding: 5vw 0;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 3vw;
+        padding: 2vw;
+        margin: 3vw 0;
+    }
+
+    p {
+        margin: 1vw;
+        font-size: 1.5vw;
+    }
+
+    #specTalents {
+        padding: 2.5vw 0;
+    }
+
+    #tiles {
+        padding: 2.5vw 0;
+    }
+
+    #tiles article {
+        width: 30vw;
+        height: 30vw;
+        text-align: center;
+        border-bottom: none;
+    }
+
+    .skill-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skill-box h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .skill-box p {
+        padding: 0;
+        margin: 0;
+    }
+
+    #two {
+        border-left: 0.1vw solid white;
+    }
+
+    #three {
+        border-top: 0.1vw solid white;
+        border-right: 0.1vw solid white;
+    }
+
+    #four {
+        border-top: 0.1vw solid white;
+    }
+
+}
