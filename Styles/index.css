@@ -6,54 +6,50 @@ body {
 
 nav {
     background-color: #A6AFAD;
-    border-bottom: #2A4C64 solid 2px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    padding: 0 2vw;
+    box-shadow: 0 0.5vw 0.5vw rgba(0, 0, 0, 0.25);
+    overflow: hidden;
     z-index: 1;
 }
 
-#nav-links {
-    list-style: none;
+nav #navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1vw;
-    margin: 0;
 }
 
-#nav-links li {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#logoImg {
+nav .menu {
     width: 12vw;
-    height: 12vw;
-}
-
-#nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 3.75vw;
-    padding: 0 0 0 2vw;
-}
-
-#nav-links a:hover {
     color: #2A4C64;
+    padding: 2vw;
+}
+  
+nav a:hover {
+    background-color: #A1D8CF;
+}
+
+nav #links {
+    display: none;
+}
+  
+nav a {
+    color: white;
+    padding: 3vw 5vw;
+    text-decoration: none;
+    font-size: 5vw;
+    display: block;
 }
 
 #social-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2vw;
     margin-left: -9vw;
-    margin-right: 1vw;
 }
 
 #social-links .fa {
@@ -61,11 +57,10 @@ nav {
     background-color: #2A4C64;
     box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.25);
     color: white;
-    font-size: 4vw;
+    font-size: 5vw;
     border-radius: 50%;
     padding: 2.5vw;
     margin: 0 1vw;
-    transition: color 2s;
 }
 
 #social-links .fa:hover {
@@ -74,7 +69,7 @@ nav {
 
 header {
     background: linear-gradient(180deg, #A1D8CF 0%, #2A4C64 100%);
-    margin-top: 15vw;
+    margin-top: 14vw;
     height: 160vw;
     opacity: 0.9;
     display: flex;
@@ -135,6 +130,7 @@ header {
     background-color: #EFAAAC;
     padding: 0;
     margin: 0;
+    box-shadow: inset 0 10vw 0 10vw 10vw rgba(0, 0, 0, 0.25), inset 0 -1vw 0 1vw -1vw rgba(0, 0, 0, 0.25);
 }
 
 #about-me div {
@@ -209,19 +205,20 @@ header {
 }
 
 @media (min-width: 769px) {
-    #logoImg {
-        width: 5vw;
-        height: 5vw;
-    }
 
-    #nav-links a {
-        font-size: 2vw;
+    nav .menu {
+        width: 5vw;
     }
 
     #social-links .fa {
         box-shadow: 0.25vw 0.25vw 0.25vw rgba(0, 0, 0, 0.25);
         font-size: 2vw;
         padding: 1vw;
+    }
+
+    nav a {
+        padding: 1vw 2vw;
+        font-size: 2.5vw;
     }
 
     header {
