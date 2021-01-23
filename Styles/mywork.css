@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 html, body {
     font-family:'Times New Roman', Times, serif;
     margin: 0;
@@ -13,6 +15,7 @@ nav {
     box-shadow: 0 0.5vw 0.5vw rgba(0, 0, 0, 0.25);
     overflow: hidden;
     z-index: 1;
+    width: 100vw;
 }
 
 nav #navbar {
@@ -69,14 +72,111 @@ nav a {
 header img {
     display: block;
     width: 100vw;
-    margin-top: 20vw;
+    margin-top: 18vw;
 }
 
-#content {
-    height: 100vw;
+section {
+    padding: 24px 0;
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0;
+    padding: 30px 0 0;
+}
+
+h2 {
+    color: #EFAAAC;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0;
+    margin: 24px 0 0;
+}
+
+h3 {
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+.main {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.blue-bg {
     background-color: #2A4C64;
+    color: white;
 }
 
+.gray-bg {
+    background-color: #A6AFAD;
+    color: #2A4C64;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.phoneImg {
+    width: 35vw;
+    padding: 20px 10px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    width: 25vw;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    background: linear-gradient(212.11deg, #A1D8CF 25.56%, #2A4C64 155.81%);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+#sec1 .row {
+    width: 1000vw;
+}
+
+footer {
+    background-color: #EFAAAC;
+}
+
+#whitespaceImg {
+    border-radius: 0 0 38.5px 38px;
+}
 
 @media (min-width: 769px) {
     nav .menu {
