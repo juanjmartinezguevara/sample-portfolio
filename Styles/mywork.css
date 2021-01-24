@@ -326,6 +326,10 @@ footer #social-links {
         box-shadow: inset 0 0.35vw 0.35vw rgba(0, 0, 0, 0.35);
     }
 
+    footer h2 {
+        font-size: 3vw;
+    }
+
     footer p {
         margin: 2vw 0;
         font-size: 1.5vw;
