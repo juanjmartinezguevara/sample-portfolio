@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 html, body {
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Raleway';
     margin: 0;
 }
 
@@ -15,7 +15,6 @@ nav {
     box-shadow: 0 0.5vw 0.5vw rgba(0, 0, 0, 0.25);
     overflow: hidden;
     z-index: 1;
-    width: 100vw;
 }
 
 nav #navbar {
@@ -56,7 +55,7 @@ nav a {
 
 #social-links .fa {
     text-decoration: none;
-    background-color: #2A4C64;
+    background-color: #A1D8CF;
     box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.25);
     color: white;
     font-size: 5vw;
@@ -68,6 +67,7 @@ nav a {
 #social-links .fa:hover {
     background: linear-gradient(220deg, #EFAAAC 5%, #2A4C64  85%);
 }
+
 
 header img {
     display: block;
@@ -85,6 +85,7 @@ h1 {
     text-align: center;
     margin-top: 0;
     padding: 30px 0 0;
+    font-weight: bold;
 }
 
 h2 {
@@ -93,6 +94,7 @@ h2 {
     text-align: center;
     margin-top: 0;
     margin: 24px 0 0;
+    font-weight: bolder
 }
 
 h3 {
@@ -123,6 +125,10 @@ p {
 
 .gray-bg {
     background-color: #A6AFAD;
+    color: white;
+}
+
+.gray-bg h1 {
     color: #2A4C64;
 }
 
@@ -131,6 +137,10 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.article {
+    width: 80vw;
 }
 
 .column {
@@ -166,36 +176,167 @@ p {
     border-radius: 25px;
 }
 
-#sec1 .row {
-    width: 1000vw;
+.button:hover {
+    background: linear-gradient(212.11deg, #EFAAAC 25.56%, #2A4C64 155.81%);
+}
+
+#sec1 .button {
+    margin: 5vw 0;
+}
+
+#details article {
+    padding: 0 1.5vw;
+    margin: 0 1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#details h3 {
+    font-size: 3vw;
+}
+
+#details p {
+    font-size: 3vw;
+}
+
+#whitespaceImg {
+    border-radius: 0 0 40px 40px;
+}
+
+#row-rev {
+    flex-direction: row-reverse;
 }
 
 footer {
     background-color: #EFAAAC;
+    color: #2A4C64;
+    box-shadow: inset 0vw 1vw 1vw rgba(0, 0, 0, 0.25);
 }
 
-#whitespaceImg {
-    border-radius: 0 0 38.5px 38px;
+footer div {
+    width: 80vw;
+    padding: 5vw;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    margin: 0;
+    color: #2A4C64;
+}
+
+footer p {
+    margin: 2vw 0;
+}
+
+footer #social-links {
+    width: inherit;
+}
+
+footer h4 {
+    margin: 0;
+}
+
+footer #social-links {
+    width: 35vw;
+    margin-left: 0;
 }
 
 @media (min-width: 769px) {
+
+    p {
+        font-size: 16px;
+    }
+
+    nav {
+        box-shadow: 0 0.25vw 0.25vw rgba(0, 0, 0, 0.35);
+    }
+
     nav .menu {
-        width: 5vw;
+        width: 3vw;
+        padding: 0;
+    }
+
+    #social-links {
+        padding: 0;
     }
 
     #social-links .fa {
         box-shadow: 0.25vw 0.25vw 0.25vw rgba(0, 0, 0, 0.25);
-        font-size: 2vw;
-        padding: 1vw;
+        font-size: 1.5vw;
+        padding: 0.8vw;
+        margin: 0 0.5vw;
+    }
+
+    #links {
+        width: 35vw;
+        padding: 1vw 0 2vw;
     }
 
     nav a {
         padding: 1vw 2vw;
-        font-size: 2.5vw;
+        font-size: 1.5vw;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+
+    .article {
+        width: 50vw;
+    }
+
+    #details h3 {
+        font-size: inherit;
+    }
+
+    #details p {
+        font-size: inherit;
     }
 
     header img {
-        margin-top: 6vw;
+        margin-top: 0;
+        height: 50vw;
+        object-fit: cover;
+    }
+
+    .phoneImg {
+        width: 18vw;
+        padding: 20px;
+    }
+
+    #whitespaceImg {
+        border-radius: 0 0 60px 60px;
+    }
+
+    .flowchart {
+        width: 60vw;
+    }
+
+    #sec5 .button {
+        margin: 50px 0;
+    }
+
+    footer {
+        box-shadow: inset 0 0.35vw 0.35vw rgba(0, 0, 0, 0.35);
+    }
+
+    footer p {
+        margin: 2vw 0;
+        font-size: 1.5vw;
+    }
+
+    footer #social-links {
+        width: 15vw;
+    }
+
+    footer h4 {
+        padding: 2vw 0 0;
     }
 
 }
